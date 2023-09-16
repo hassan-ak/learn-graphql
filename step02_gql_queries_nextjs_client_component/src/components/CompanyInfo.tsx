@@ -1,11 +1,10 @@
 "use client";
-import { launchesQuery } from "@/lib/gqlQueries";
+import { companyQuery } from "@/lib/gqlQueries";
 import { useQuery } from "@apollo/client";
 import Link from "next/link";
 import React from "react";
 export const CompanyInfo = () => {
-  const { loading, error, data } = useQuery(launchesQuery);
-  console.log(data);
+  const { loading, error, data } = useQuery(companyQuery);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :</p>;
   return (
