@@ -65,30 +65,47 @@
 
    ```ts
    import { gql } from "@apollo/client";
-   export const launchesQuery = gql`
-     query Launches {
-       launches {
-         id
-         details
-         mission_name
-         rocket {
-           rocket_name
-           rocket_type
+   export const companyQuery = gql`
+     query Company {
+       company {
+         ceo
+         coo
+         cto
+         cto_propulsion
+         employees
+         founded
+         founder
+         headquarters {
+           address
+           city
+           state
          }
+         launch_sites
+         links {
+           elon_twitter
+           flickr
+           twitter
+           website
+         }
+         name
+         summary
+         test_sites
+         valuation
+         vehicles
        }
      }
    `;
    ```
 
-7. Create `src/components/Launches.tsx`
+7. Create `src/components/ComapnyInfo.tsx`
 
    ```tsx
    "use client";
-   import { launchesQuery } from "@/lib/gqlQueries";
+   import { companyQuery } from "@/lib/gqlQueries";
    import { useQuery } from "@apollo/client";
    import React from "react";
-   export const Launches = () => {
-     const { loading, error, data } = useQuery(launchesQuery);
+   export const ComapnyInfo = () => {
+     const { loading, error, data } = useQuery(companyQuery);
      console.log(data);
      if (loading) return <p>Loading...</p>;
      if (error) return <p>Error :</p>;
@@ -102,20 +119,20 @@
    };
    ```
 
-8. Create `src/app/launches/page.tsx`
+8. Update `src/app/page.tsx`
 
    ```tsx
-   import { Launches } from "@/components/Launches";
+   import { CompanyInfo } from "@/components/Launches";
    export default function LaunchesPage() {
      return (
        <div>
-         <Launches />
+         <CompanyInfo />
        </div>
      );
    }
    ```
 
-9. Run the app locally and visit the page at `http://localhost:3000/launches`
+9. Run the app locally and visit the page at `http://localhost:3000`
    ```
    npm run dev
    ```
