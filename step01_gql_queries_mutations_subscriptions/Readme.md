@@ -1,4 +1,4 @@
-# Queries and Mutations in gql
+# Queries, Mutations and Subscriptions in gql
 
 ## Fetching Data with Queries
 
