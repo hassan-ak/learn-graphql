@@ -1,4 +1,4 @@
-# Running GraphQL queries in Next.js 13 (server Components)
+# GraphQL queries in Next.js 13 (server Components)
 
 1. Create a next app.
 
