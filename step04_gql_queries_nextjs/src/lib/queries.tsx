@@ -1,5 +1,6 @@
-import { graphql } from "./gql";
-export const companyQuery = graphql(/* GraphQL */ `
+import { gql } from "@apollo/client";
+
+export const companyInfo = gql`
   query Company {
     company {
       ceo
@@ -28,4 +29,4 @@ export const companyQuery = graphql(/* GraphQL */ `
       vehicles
     }
   }
-`);
+`;
