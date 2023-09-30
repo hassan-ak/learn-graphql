@@ -31,7 +31,7 @@ This guide will walk you through the steps to use qraphql in Next.JS 13 both in 
      return new NextSSRApolloClient({
        cache: new NextSSRInMemoryCache(),
        link: new HttpLink({
-         uri: "https://main--time-pav6zq.apollographos.net/graphql",
+         uri: "https://main--spacex-l4uc6p.apollographos.net/graphql",
        }),
      });
    });
@@ -218,7 +218,7 @@ This guide will walk you through the steps to use qraphql in Next.JS 13 both in 
    }
    ```
 
-10. We have used gql queries in client components. For using same queries in the client component we need to use a provider to pass the client. Create `src/lib/apollo-provider.ts`.
+10. We have used gql queries in client components. For using same queries in the client component we need to use a provider to pass the client. Create `src/lib/apollo-provider.tsx`.
 
     ```tsx
     "use client";
@@ -329,8 +329,24 @@ This guide will walk you through the steps to use qraphql in Next.JS 13 both in 
 
 14. Update src/app/page.tsx
 
-```tsx
-```
+    ```tsx
+    import ClientCache from "@/components/ClientCache";
+    import ClientNoCache from "@/components/ClientNoCache";
+    import ServerCache from "@/components/ServerCache";
+    import ServerNoCache from "@/components/ServerNoCache";
+    import ServerRevalidate from "@/components/ServerRevalidate";
+    export default function Home() {
+      return (
+        <div className="flex flex-col gap-4">
+          <ServerCache />
+          <ServerNoCache />
+          <ServerRevalidate />
+          <ClientCache />
+          <ClientNoCache />
+        </div>
+      );
+    }
+    ```
 
 15. Run the app locally and visit the page at `http://localhost:3000`
 
