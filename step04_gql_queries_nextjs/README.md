@@ -1,6 +1,6 @@
 # GraphQL queries in Next.js 13
 
-This guide will walk you through the steps to use qraphql in Next.JS 13 both in server as well as client components
+This guide will walk you through the steps to use graphql in Next.JS 13 both in server as well as client components
 
 1. Create a next app.
 
@@ -201,7 +201,7 @@ This guide will walk you through the steps to use qraphql in Next.JS 13 both in 
    }
    ```
 
-9. Create `src/components/ServerNoCache.tsx` to define a server component which fetches data on the server with revalidation after some interval
+9. Create `src/components/ServerRevalidate.tsx` to define a server component which fetches data on the server with revalidation after some interval
 
    ```tsx
    import { getClient } from "@/lib/client";
@@ -283,7 +283,7 @@ This guide will walk you through the steps to use qraphql in Next.JS 13 both in 
     }
     ```
 
-12. Create `src/cpmponents/ClientCache.tsx` to define a client component with cache enabled
+12. Create `src/components/ClientCache.tsx` to define a client component with cache enabled
 
     ```tsx
     "use client";
@@ -304,7 +304,7 @@ This guide will walk you through the steps to use qraphql in Next.JS 13 both in 
     }
     ```
 
-13. Create `src/cpmponents/ClientNoCache.tsx` to define a client component with cache disabled
+13. Create `src/components/ClientNoCache.tsx` to define a client component with cache disabled
 
     ```tsx
     "use client";
