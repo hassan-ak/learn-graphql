@@ -1,6 +1,6 @@
 # GraphQL queries in Next.js 13 with CodeGen
 
-This guide will walk you through the steps to use qraphql in Next.JS 13 using CodeGen
+This guide will walk you through the steps to use graphql in Next.JS 13 using CodeGen
 
 1. Create a next app.
 
