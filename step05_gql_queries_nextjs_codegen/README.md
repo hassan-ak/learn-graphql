@@ -65,7 +65,7 @@ This guide will walk you through the steps to use graphql in Next.JS 13 using Co
      return new NextSSRApolloClient({
        cache: new NextSSRInMemoryCache(),
        link: new HttpLink({
-         uri: "https://main--time-pav6zq.apollographos.net/graphql",
+         uri: "https://main--spacex-l4uc6p.apollographos.net/graphql",
        }),
      });
    });
