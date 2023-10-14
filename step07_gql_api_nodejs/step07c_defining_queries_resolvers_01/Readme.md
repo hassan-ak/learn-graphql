@@ -1,4 +1,4 @@
-# Defining Queries Part 01
+# Defining Queries and Resolvers Part 01
 
 1. Follow [Creating Server](../step07b_creating_server/) before following this step. Once you have completed the last steps run the following in two different terminals
 
