@@ -11,4 +11,3 @@ Alright, let's break it down! We're starting from scratch, building a GraphQL AP
 
 
 
-I've integrated the last class code into the repository. Feel free to access it at your convenience.
