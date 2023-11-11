@@ -1,4 +1,4 @@
-# Defining Queries Part 01
+# Defining Queries Part 02
 
 1. Once you have completed [Defining Queries 01](../step07c_defining_queries_01/) run the following in two different terminals
 
