@@ -8,6 +8,7 @@ Alright, let's break it down! We're starting from scratch, building a GraphQL AP
 2. [Creating Server](./step07b_creating_server/)
 3. [Defining Queries and Resolvers Part 01](./step07c_defining_queries_resolvers_01/)
 4. [Defining Queries and Resolvers Part 02](./step07d_defining_queries_resolvers_02/)
-
-
-
+5. [Defining Queries and Resolvers Part 03](./step07e_defining_queries_resolvers_03/)
+6. [Defining Queries and Resolvers Part 04](./step07f_defining_queries_resolvers_04/)
+7. [Defining Mutations and Resolvers](./step07g_defining_mutations_resolvers/)
+8. [Complete Example](./step07h_complete_example/)
